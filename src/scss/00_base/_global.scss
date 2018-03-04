@@ -11,7 +11,7 @@ html {
   box-sizing: border-box;
   font-family: sans-serif;
   line-height: 1.15;
-  font-size: 16px;
+  font-size: 18px;
   height: auto;
   width: auto;
 }
@@ -29,7 +29,7 @@ html {
 body {
   word-wrap: break-word;
   margin: 0;
-  @include font-size(15px);
+  @include font-size(18px);
   line-height: 1.4666;
   -ms-content-zooming: none;
   -webkit-font-smoothing: antialiased;
@@ -210,4 +210,10 @@ hr {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.image-credit {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
