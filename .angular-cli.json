@@ -19,7 +19,10 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "../node_modules/spectre.css/dist/spectre.css",
+        "../node_modules/spectre.css/dist/spectre-exp.css",
+        "../node_modules/spectre.css/dist/spectre-icons.css",
+        "scss/style.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
