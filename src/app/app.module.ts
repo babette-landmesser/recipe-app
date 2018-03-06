@@ -6,6 +6,8 @@ import {AppComponent} from './app.component';
 import {PublicLayoutComponent} from './public-layout/public-layout.component';
 import {RestrictedLayoutComponent} from './restricted-layout/restricted-layout.component';
 import {AppRoutingModule} from './app-routing.module';
+import {AuthGuard} from './core/services/authguard.service';
+import {Auth} from './core/services/auth.service';
 
 
 @NgModule({
@@ -18,7 +20,10 @@ import {AppRoutingModule} from './app-routing.module';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    AuthGuard,
+    Auth
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
