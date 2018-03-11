@@ -1,3 +1,20 @@
-<p>
-  recipes-list works!
-</p>
+<div class="recipe__list">
+  <div class="recipe card" *ngFor="let recipe of recipes">
+    <div class="card-image" *ngIf="recipe.image">
+      <img [src]="recipe.image" class="img-responsive">
+    </div>
+    <div class="card-header">
+      <div class="card-title h5">{{ recipe.title }}</div>
+      <div class="card-subtitle text-gray">{{ recipe.portion }} Portion(en)</div>
+    </div>
+    <div class="card-body">
+      {{ recipe.preparation | trim: 100}}
+    </div>
+    <div class="card-footer">
+      <a routerLink="/recipes/{{ recipe.id }}" class="btn btn-primary">Zum Rezept</a>
+      <a routerLink="/recipes/{{ recipe.id }}/edit" class="btn">
+        <i class="icon icon-edit"></i>
+      </a>
+    </div>
+  </div>
+</div>
