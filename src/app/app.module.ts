@@ -8,6 +8,7 @@ import {RestrictedLayoutComponent} from './restricted-layout/restricted-layout.c
 import {AppRoutingModule} from './app-routing.module';
 import {AuthGuard} from './core/services/authguard.service';
 import {Auth} from './core/services/auth.service';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import {Auth} from './core/services/auth.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
     AuthGuard,
