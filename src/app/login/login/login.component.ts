@@ -29,6 +29,10 @@ export class LoginComponent implements OnInit {
         if (result.hasOwnProperty('token')) {
           localStorage.setItem('recipe-app-token', result.token);
           this.router.navigate(['/recipes']);
+        } else {
+          if (result.status === 500) {
+            this.loginFormHasErrors = true;
+          }
         }
       }
     );
