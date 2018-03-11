@@ -12,8 +12,8 @@ html {
   font-family: sans-serif;
   line-height: 1.15;
   font-size: 18px;
-  height: auto;
-  width: auto;
+  height: 100%;
+  width: 100%;
 }
 
 *,
@@ -37,6 +37,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   //font-feature-settings: "kern" 1;
   -ms-overflow-style: scrollbar;
+  height: 100%;
+  width: 100%;
 }
 
 article,
